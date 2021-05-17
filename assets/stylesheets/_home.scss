@@ -33,7 +33,7 @@
 }
 
 @media screen and (max-width: 736px) {
-    #side-nav ul li {
+    .side-nav ul li {
         width: 3.4rem;
     }
 }
@@ -76,17 +76,17 @@
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.4);
-}
-.btn a {
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-decoration: none;
-}
-.btn:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    transform: scale(1.05);
-    transition: ease-out .3s;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+        transform: scale(1.05);
+        transition: ease-out .3s;
+    }
+    a {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-decoration: none;
+    }
 }
   /* Gallaries */
 
@@ -157,17 +157,17 @@
     margin-bottom: 2rem;
     padding: 1.5rem 2.5rem;
     border: 1px solid rgba(255, 255, 255, 0.4);
-}
- .btn-full a  { 
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-decoration: none;
-}
-.btn-full:hover {
-    background: rgba(30, 93, 230, 0.9);
-    transform: scale(1.05);
-    transition: ease-out .2s;
+    &:hover {
+        background: rgba(30, 93, 230, 0.9);
+        transform: scale(1.05);
+        transition: ease-out .2s;
+    }
+    a  { 
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-decoration: none;
+    }
 }
 .contact {
     display: flex;
@@ -261,4 +261,37 @@
 .page-footer {
     text-align: center;
     margin-top: 2rem;
+}
+@media screen and (max-width: 556px) {
+    html {
+        font-size: 12px;
+    }
+    body {
+     margin: 1rem;   
+    }
+    .side-nav {
+        display: flex;
+        justify-content: space-around;
+        ul {
+            display: flex;
+            position: fixed;
+            width: 92%;
+            top: 0;
+            justify-content: space-around;
+            align-items: center;
+            background: #0d1217;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+    .column {
+        button {
+            padding: 1rem;
+            margin-left: 0;
+        }
+    }   
 }

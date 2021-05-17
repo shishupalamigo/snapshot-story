@@ -138,7 +138,7 @@ h3 {
 }
 
 @media screen and (max-width: 736px) {
-  #side-nav ul li {
+  .side-nav ul li {
     width: 3.4rem;
   }
 }
@@ -194,19 +194,19 @@ h3 {
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.btn a {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-}
-
 .btn:hover {
   background-color: rgba(255, 255, 255, 0.4);
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   -webkit-transition: ease-out .3s;
   transition: ease-out .3s;
+}
+
+.btn a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 /* Gallaries */
@@ -306,19 +306,19 @@ h3 {
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.btn-full a {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-}
-
 .btn-full:hover {
   background: rgba(30, 93, 230, 0.9);
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   -webkit-transition: ease-out .2s;
   transition: ease-out .2s;
+}
+
+.btn-full a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .contact {
@@ -423,6 +423,51 @@ h3 {
 .page-footer {
   text-align: center;
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 556px) {
+  html {
+    font-size: 12px;
+  }
+  body {
+    margin: 1rem;
+  }
+  .side-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .side-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    width: 92%;
+    top: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #0d1217;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .column button {
+    padding: 1rem;
+    margin-left: 0;
+  }
 }
 
 :root {
