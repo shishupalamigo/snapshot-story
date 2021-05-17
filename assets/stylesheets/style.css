@@ -62,7 +62,6 @@ html {
 body {
   background-image: url("../media/Gallery-images/topography.svg"), linear-gradient(110deg, #f93d66, #6d47d9);
   margin: 4rem;
-  /* background: white; */
   background-attachment: fixed;
 }
 
@@ -444,7 +443,7 @@ h3 {
     display: -ms-flexbox;
     display: flex;
     position: fixed;
-    width: 92%;
+    width: 93%;
     top: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -466,13 +465,8 @@ h3 {
   }
   .column button {
     padding: 1rem;
-    margin-left: 0;
+    margin-left: 2rem;
   }
-}
-
-:root {
-  --yellow: #ffc600;
-  --black: #272727;
 }
 
 .close {
@@ -592,8 +586,8 @@ h3 {
 
 .overlay-inner {
   background: #f8b6b6;
-  width: 700px;
-  padding: 40px;
+  width: 60%;
+  padding: 2rem;
 }
 
 .btn-container {
